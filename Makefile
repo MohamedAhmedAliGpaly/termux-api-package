@@ -3,7 +3,7 @@ CFLAGS += -std=c11 -Wall -Wextra -pedantic -Werror -DPREFIX=\"$(PREFIX)\"
 
 termux-api: lifehost-api.c
 
-install: termux-api
+install: lifehost-api
 	mkdir -p $(PREFIX)/bin/ $(PREFIX)/libexec/
 	install lifehost-api $(PREFIX)/libexec/
 	install lifehost-callback $(PREFIX)/libexec/
